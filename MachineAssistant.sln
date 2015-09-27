@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MachineAssistant", "MachineAssistant\MachineAssistant.csproj", "{9EC29A78-D7BB-473F-830C-94BFD7320853}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAEngine", "MAEngine\MAEngine.csproj", "{B1F001CF-3B6A-4F01-A4D5-39ACA10B63CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileOperator", "FileOperator\FileOperator.csproj", "{64302E4F-E916-46CA-AB4B-5AEA39A6E4B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EC29A78-D7BB-473F-830C-94BFD7320853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EC29A78-D7BB-473F-830C-94BFD7320853}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EC29A78-D7BB-473F-830C-94BFD7320853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EC29A78-D7BB-473F-830C-94BFD7320853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1F001CF-3B6A-4F01-A4D5-39ACA10B63CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1F001CF-3B6A-4F01-A4D5-39ACA10B63CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1F001CF-3B6A-4F01-A4D5-39ACA10B63CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1F001CF-3B6A-4F01-A4D5-39ACA10B63CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64302E4F-E916-46CA-AB4B-5AEA39A6E4B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64302E4F-E916-46CA-AB4B-5AEA39A6E4B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64302E4F-E916-46CA-AB4B-5AEA39A6E4B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64302E4F-E916-46CA-AB4B-5AEA39A6E4B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

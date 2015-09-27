@@ -1,0 +1,11 @@
+c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\MachineAssistant\bin\Release\MachineAssistant.exe.config
+c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\MachineAssistant\bin\Release\MachineAssistant.exe
+c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\MachineAssistant\bin\Release\MachineAssistant.pdb
+c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\MachineAssistant\bin\Release\MAEngine.dll
+c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\MachineAssistant\bin\Release\MAEngine.pdb
+c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\MachineAssistant\obj\Release\MachineAssistant.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\MachineAssistant\obj\Release\MachineAssistant.MainForm.resources
+c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\MachineAssistant\obj\Release\MachineAssistant.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\MachineAssistant\obj\Release\MachineAssistant.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\MachineAssistant\obj\Release\MachineAssistant.exe
+c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\MachineAssistant\obj\Release\MachineAssistant.pdb

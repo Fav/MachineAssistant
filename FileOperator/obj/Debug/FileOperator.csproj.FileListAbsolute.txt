@@ -1,0 +1,5 @@
+c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\bin\plugin\FileOperator.dll
+c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\bin\plugin\FileOperator.pdb
+c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\FileOperator\obj\Debug\FileOperator.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\FileOperator\obj\Debug\FileOperator.dll
+c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\FileOperator\obj\Debug\FileOperator.pdb

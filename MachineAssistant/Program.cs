@@ -30,6 +30,7 @@ namespace MachineAssistant
             foreach (var file in dllFiles)
             {
                 Assembly a = Assembly.LoadFile(file);
+                
                 Type[] types = a.GetTypes();
                 foreach (var type in types)
                 {
@@ -38,7 +39,8 @@ namespace MachineAssistant
                     {
                         if (theInterface.FullName.Equals("MAEngine.IMACmd"))
                         {
-                            Common.g_CMDDir[type.FullName] = GetPluginObject(type);
+                            string dllDescrip = ((System.Reflection.AssemblyDescriptionAttribute)(((System.Attribute[])(a.GetCustomAttributes()))[8])).Description;
+                            Common.g_CMDDir[type.FullName] = new CCMDTag() { MACmd = GetPluginObject(type), DllDescrip = dllDescrip };
                         }
                     }
                 }

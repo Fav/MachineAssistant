@@ -40,6 +40,10 @@ namespace MachineAssistant
                         if (theInterface.FullName.Equals("MAEngine.IMACmd"))
                         {
                             string dllDescrip = ((System.Reflection.AssemblyDescriptionAttribute)(((System.Attribute[])(a.GetCustomAttributes()))[8])).Description;
+                            if (string.IsNullOrEmpty(dllDescrip))
+                            {
+                                dllDescrip = type.FullName.Split('.')[0];
+                            }
                             Common.g_CMDDir[type.FullName] = new CCMDTag() { MACmd = GetPluginObject(type), DllDescrip = dllDescrip };
                         }
                     }

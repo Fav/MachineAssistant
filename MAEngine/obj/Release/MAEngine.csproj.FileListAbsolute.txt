@@ -1,4 +1,0 @@
-c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\MAEngine\bin\Release\MAEngine.dll
-c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\MAEngine\bin\Release\MAEngine.pdb
-c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\MAEngine\obj\Release\MAEngine.dll
-c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\MAEngine\obj\Release\MAEngine.pdb

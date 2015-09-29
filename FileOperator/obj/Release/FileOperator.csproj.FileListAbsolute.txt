@@ -1,6 +1,0 @@
-c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\FileOperator\bin\Release\FileOperator.dll
-c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\FileOperator\bin\Release\FileOperator.pdb
-c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\FileOperator\bin\Release\MAEngine.dll
-c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\FileOperator\bin\Release\MAEngine.pdb
-c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\FileOperator\obj\Release\FileOperator.dll
-c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\FileOperator\obj\Release\FileOperator.pdb

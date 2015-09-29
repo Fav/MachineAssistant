@@ -1,7 +1,0 @@
-c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\MAEngine\bin\Debug\MAEngine.dll
-c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\MAEngine\bin\Debug\MAEngine.pdb
-c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\MAEngine\obj\Debug\MAEngine.dll
-c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\MAEngine\obj\Debug\MAEngine.pdb
-c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\bin\MAEngine.dll
-c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\bin\MAEngine.pdb
-c:\users\administrator\documents\visual studio 2012\Projects\MachineAssistant\MAEngine\obj\Debug\MAEngine.csprojResolveAssemblyReference.cache

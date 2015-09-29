@@ -39,6 +39,11 @@
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.splitContainer4 = new System.Windows.Forms.SplitContainer();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -52,12 +57,16 @@
             this.splitContainer3.Panel2.SuspendLayout();
             this.splitContainer3.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
+            this.splitContainer4.Panel1.SuspendLayout();
+            this.splitContainer4.Panel2.SuspendLayout();
+            this.splitContainer4.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 26);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -66,9 +75,9 @@
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.panel1);
-            this.splitContainer1.Size = new System.Drawing.Size(863, 519);
-            this.splitContainer1.SplitterDistance = 440;
+            this.splitContainer1.Panel2.Controls.Add(this.splitContainer4);
+            this.splitContainer1.Size = new System.Drawing.Size(840, 481);
+            this.splitContainer1.SplitterDistance = 306;
             this.splitContainer1.TabIndex = 0;
             // 
             // splitContainer2
@@ -86,8 +95,8 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.richTextBox1);
-            this.splitContainer2.Size = new System.Drawing.Size(440, 519);
-            this.splitContainer2.SplitterDistance = 395;
+            this.splitContainer2.Size = new System.Drawing.Size(306, 481);
+            this.splitContainer2.SplitterDistance = 403;
             this.splitContainer2.TabIndex = 0;
             // 
             // splitContainer3
@@ -103,8 +112,8 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.tvFuntion);
-            this.splitContainer3.Size = new System.Drawing.Size(440, 370);
-            this.splitContainer3.SplitterDistance = 213;
+            this.splitContainer3.Size = new System.Drawing.Size(306, 378);
+            this.splitContainer3.SplitterDistance = 107;
             this.splitContainer3.TabIndex = 0;
             // 
             // tvModel
@@ -114,7 +123,8 @@
             this.tvModel.HideSelection = false;
             this.tvModel.Location = new System.Drawing.Point(0, 0);
             this.tvModel.Name = "tvModel";
-            this.tvModel.Size = new System.Drawing.Size(213, 370);
+            this.tvModel.ShowLines = false;
+            this.tvModel.Size = new System.Drawing.Size(107, 378);
             this.tvModel.TabIndex = 0;
             this.tvModel.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvModel_AfterSelect);
             // 
@@ -127,7 +137,7 @@
             this.tvFuntion.Name = "tvFuntion";
             this.tvFuntion.ShowLines = false;
             this.tvFuntion.ShowPlusMinus = false;
-            this.tvFuntion.Size = new System.Drawing.Size(223, 370);
+            this.tvFuntion.Size = new System.Drawing.Size(195, 378);
             this.tvFuntion.TabIndex = 0;
             this.tvFuntion.ItemDrag += new System.Windows.Forms.ItemDragEventHandler(this.tvFuntion_ItemDrag);
             this.tvFuntion.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvFuntion_AfterSelect);
@@ -140,14 +150,14 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(440, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(306, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripTextBox1
             // 
             this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(350, 25);
+            this.toolStripTextBox1.Size = new System.Drawing.Size(150, 25);
             // 
             // toolStripButton1
             // 
@@ -160,11 +170,11 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox1.Location = new System.Drawing.Point(0, 0);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(440, 120);
+            this.richTextBox1.Size = new System.Drawing.Size(306, 74);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
@@ -174,17 +184,66 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(419, 519);
+            this.panel1.Size = new System.Drawing.Size(530, 395);
             this.panel1.TabIndex = 0;
             this.panel1.DragDrop += new System.Windows.Forms.DragEventHandler(this.panel1_DragDrop);
             this.panel1.DragEnter += new System.Windows.Forms.DragEventHandler(this.panel1_DragEnter);
+            // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(840, 26);
+            this.panel2.TabIndex = 1;
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2});
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.Location = new System.Drawing.Point(0, 0);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(530, 82);
+            this.listView1.TabIndex = 1;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // splitContainer4
+            // 
+            this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer4.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer4.Name = "splitContainer4";
+            this.splitContainer4.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer4.Panel1
+            // 
+            this.splitContainer4.Panel1.Controls.Add(this.panel1);
+            // 
+            // splitContainer4.Panel2
+            // 
+            this.splitContainer4.Panel2.Controls.Add(this.listView1);
+            this.splitContainer4.Size = new System.Drawing.Size(530, 481);
+            this.splitContainer4.SplitterDistance = 395;
+            this.splitContainer4.TabIndex = 2;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "日志";
+            this.columnHeader1.Width = 432;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "时间";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(863, 519);
+            this.ClientSize = new System.Drawing.Size(840, 507);
             this.Controls.Add(this.splitContainer1);
+            this.Controls.Add(this.panel2);
             this.Name = "MainForm";
             this.Text = "机器助手";
             this.Load += new System.EventHandler(this.MainForm_Load);
@@ -203,6 +262,10 @@
             this.splitContainer3.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.splitContainer4.Panel1.ResumeLayout(false);
+            this.splitContainer4.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).EndInit();
+            this.splitContainer4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -219,6 +282,11 @@
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.TreeView tvFuntion;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.SplitContainer splitContainer4;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
 
     }
 }

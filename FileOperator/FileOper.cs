@@ -18,18 +18,26 @@ namespace FileOperator
 
         public bool Excute()
         {
-            setAttr();
+            if (!DoBeforeExcute())
+            {
+                return false;
+            }
             if (null == MAParams || 0== MAParams.Count )
             {
                 return false;
             }
+
             return RunCmd(MAParams["exePath"].ToString(),MAParams["param"].ToString());
         }
         public void OutLog()
         {
         }
         #endregion  
-        void setAttr() { }
+
+        protected virtual bool DoBeforeExcute() 
+        { 
+            return true; 
+        }
         /// <summary>
         /// 运行cmd命令
         /// 不显示命令窗口
@@ -51,7 +59,15 @@ namespace FileOperator
                     myPro.StartInfo.CreateNoWindow = true;
                     myPro.Start();
                     //如果调用程序路径中有空格时，cmd命令执行失败，可以用双引号括起来 ，在这里两个引号表示一个引号（转义）
-                    string str = string.Format(@"""{0}"" {1} {2}", cmdExe, cmdStr, "&exit");
+                    string str = "";
+                    if (string.IsNullOrEmpty(cmdExe))
+                    {
+                        str = string.Format(@"{0} {1}",cmdStr, "&exit");
+                    }
+                    else
+                    {
+                        str = string.Format(@"""{0}"" {1} {2}", cmdExe, cmdStr, "&exit");
+                    }
 
                     myPro.StandardInput.WriteLine(str);
                     myPro.StandardInput.AutoFlush = true;

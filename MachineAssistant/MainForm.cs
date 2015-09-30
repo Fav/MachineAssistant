@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -93,7 +94,42 @@ namespace MachineAssistant
         //拖动效果暂时用双击代替
         private void tvFuntion_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
         {
+            TreeNode node = e.Node;
+            IMACmd temp = _cmdDir[node.Name].MACmd;
+            Type t = temp.GetType();
+            PropertyInfo[] propInfos = t.GetProperties();
+            Panel p = new Panel() {Width = panel1.Width };
+            p.Tag = temp;
+            foreach (var item in propInfos)
+            {
+                //if (item.GetType())
+                if (item.PropertyType.GetInterfaces().Contains(typeof(MAEngine.IMAControl)))
+                {
+                    Control ctrl = item.GetValue(temp, null) as Control;
+                    if (ctrl == null)
+                        continue;
+                    //ctrl.Width = panel1.Width;
+                    ctrl.Dock = DockStyle.Left;
+                    p.Controls.Add(ctrl);
+                }
+            }
+            panel1.Controls.Add(p);
 
+
+        }
+
+        private void tsbExcute_Click(object sender, EventArgs e)
+        {
+            foreach (var item in panel1.Controls)
+            {
+                Panel p = item as Panel;
+                if (p ==null)
+                    continue;
+                IMACmd tempCmd = p.Tag as IMACmd;
+                if (tempCmd == null)
+                    continue;
+                tempCmd.Excute();
+            }
         }
 
 

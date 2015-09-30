@@ -1,0 +1,9 @@
+[DEFAULT]
+BASEURL=http://share.weiyun.com/b8320300c113416344f1f5f6df4e3712
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,2
+[InternetShortcut]
+URL=http://share.weiyun.com/b8320300c113416344f1f5f6df4e3712
+IDList=
+IconFile=http://www.weiyun.com/favicon.ico?max_age=31536000
+IconIndex=1
